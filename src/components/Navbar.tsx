@@ -45,7 +45,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             className="ml-4 rounded-md border border-accent px-4 py-1.5 text-sm font-medium text-accent transition-all hover:bg-accent hover:text-bg"
           >
             Contact
@@ -76,7 +76,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             onClick={() => setMenuOpen(false)}
             className="inline-block text-center rounded-md border border-accent px-4 py-1.5 text-sm font-medium text-accent transition-all hover:bg-accent hover:text-bg"
           >
