@@ -45,30 +45,7 @@ export default function Contact() {
                 className="w-full rounded-md border border-border bg-surface px-4 py-3 text-sm text-text placeholder-text-muted outline-none transition-colors focus:border-accent"
               />
             </div>
-            <div>
-              <label htmlFor="email" className="sr-only">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                placeholder="Email"
-                className="w-full rounded-md border border-border bg-surface px-4 py-3 text-sm text-text placeholder-text-muted outline-none transition-colors focus:border-accent"
-              />
-            </div>
-            <div>
-              <label htmlFor="budget" className="sr-only">Budget range</label>
-              <select
-                id="budget"
-                name="budget"
-                className="w-full rounded-md border border-border bg-surface px-4 py-3 text-sm text-text-muted outline-none transition-colors focus:border-accent"
-              >
-                <option value="">Budget range</option>
-                <option value="<5k">&lt; $5,000</option>
-                <option value="5k-15k">$5,000 — $15,000</option>
-                <option value="15k+">$15,000+</option>
-              </select>
-            </div>
+
             <div>
               <label htmlFor="message" className="sr-only">Message</label>
               <textarea
