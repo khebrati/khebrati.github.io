@@ -28,37 +28,39 @@ export default function Contact() {
 
         <Reveal delay={0.15}>
           <form
+            action="https://formspree.io/f/xgobrybv"
+            method="POST"
             className="mt-12 mx-auto max-w-lg space-y-5"
-            onSubmit={(e) => e.preventDefault()}
           >
+            <input type="hidden" name="_subject" value="Portfolio Contact" />
+            <input type="text" name="_gotcha" className="hidden" />
             <div>
-              <label htmlFor="name" className="sr-only">
-                Name
-              </label>
+              <label htmlFor="name" className="sr-only">Name</label>
               <input
                 id="name"
+                name="name"
                 type="text"
+                required
                 placeholder="Name"
                 className="w-full rounded-md border border-border bg-surface px-4 py-3 text-sm text-text placeholder-text-muted outline-none transition-colors focus:border-accent"
               />
             </div>
             <div>
-              <label htmlFor="email" className="sr-only">
-                Email
-              </label>
+              <label htmlFor="email" className="sr-only">Email</label>
               <input
                 id="email"
+                name="email"
                 type="email"
+                required
                 placeholder="Email"
                 className="w-full rounded-md border border-border bg-surface px-4 py-3 text-sm text-text placeholder-text-muted outline-none transition-colors focus:border-accent"
               />
             </div>
             <div>
-              <label htmlFor="budget" className="sr-only">
-                Budget range
-              </label>
+              <label htmlFor="budget" className="sr-only">Budget range</label>
               <select
                 id="budget"
+                name="budget"
                 className="w-full rounded-md border border-border bg-surface px-4 py-3 text-sm text-text-muted outline-none transition-colors focus:border-accent"
               >
                 <option value="">Budget range</option>
@@ -68,12 +70,12 @@ export default function Contact() {
               </select>
             </div>
             <div>
-              <label htmlFor="message" className="sr-only">
-                Message
-              </label>
+              <label htmlFor="message" className="sr-only">Message</label>
               <textarea
                 id="message"
+                name="message"
                 rows={4}
+                required
                 placeholder="Tell me about your project"
                 className="w-full rounded-md border border-border bg-surface px-4 py-3 text-sm text-text placeholder-text-muted outline-none transition-colors focus:border-accent resize-y"
               />
